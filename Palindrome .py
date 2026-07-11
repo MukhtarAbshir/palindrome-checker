@@ -10,17 +10,17 @@ def is_palindrome(text):
 
 def main():
     while True:
-        text = input("\nGali erey ama jumlad (ama 'Kabax' si aad ubaxdo)").strip()
-        if text.lower() == "Kabax":
-            print(f"Macasalaama!")
+        text = input("\nEnter a word or sentence (ama 'Quit' to exit)").strip()
+        if text.lower() == "Quit":
+            print(f"Goodbye!")
             break
         elif text.lower() == "":
-            print(f"Wax qor saaxiib")
+            print(f"Please enter something")
         else:
             result = is_palindrome(text)
             if result:
-                print(f"'{text}' Waa palindrome!")
+                print(f"'{text}' IS palindrome!")
             else:
-                print(f"'{text}' Maahan palindrome")
+                print(f"'{text}' is NOT palindrome.")
 
 main()
